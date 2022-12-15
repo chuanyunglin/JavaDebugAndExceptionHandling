@@ -9,9 +9,10 @@ import java.util.logging.SocketHandler;
 
 public class LogClient {
 	private static final int PORT_NUM = 8100;
-	private static Logger logger = Logger.getAnonymousLogger();
+	private static Logger logger = Logger.getLogger(LogClient.class.getName());
 
 	public static void main(String argv[]) throws IOException {
+		logger.setLevel(Level.ALL);
 		try {
 			Handler handler = new SocketHandler("localhost", PORT_NUM);
 			// handler.setFormatter(new SimpleFormatter());

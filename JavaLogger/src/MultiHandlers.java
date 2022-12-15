@@ -7,7 +7,7 @@ import java.util.logging.MemoryHandler;
 import java.util.logging.XMLFormatter;
 
 public class MultiHandlers {
-	private static Logger logger = Logger.getLogger(MultiHandlers.class.getSimpleName());
+	private static Logger logger = Logger.getLogger(MultiHandlers.class.getName());
 	
 	static {
 		// logger.setLevel(Level.ALL);

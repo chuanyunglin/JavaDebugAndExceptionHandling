@@ -8,7 +8,7 @@ import java.util.logging.Logger;
  *
  */
 public class JavaLogger {
-	private static Logger logger = Logger.getLogger(JavaLogger.class.getSimpleName());
+	private static Logger logger = Logger.getLogger(JavaLogger.class.getName());
 	
 	public static void foo() {
 		long time = System.currentTimeMillis();
